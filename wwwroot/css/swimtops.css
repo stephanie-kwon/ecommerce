@@ -1,0 +1,33 @@
+.sideNav {
+    height: 100%;
+    width: 300px;
+    margin-top: 3%;
+    display: inline-block;
+    top: 15%;
+    /* border:1px orange solid; */
+    background-color: white;
+    vertical-align: top;
+    
+}
+a:link {
+    color:black;
+}
+a:visited{
+    color:black;
+}
+
+
+.topImg {
+    width: 250px;
+    height:300px;
+    display: inline-block;
+
+}
+.topsProducts{
+    /* border:1px pink solid; */
+    width:70%;
+    margin-top: 3%;
+    display: inline-block;
+
+
+}

@@ -1,0 +1,59 @@
+.topBanner{
+    background-color: #e6dad3;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    width: 75%;
+    height: 330px;
+    margin-top: 3%;
+    display: inline-block;
+    vertical-align: top;   
+    /* margin-left: 80px; */
+}
+.sideNav {
+    height: 100%;
+    width: 300px;
+    margin-top: 3%;
+    display: inline-block;
+    top: 15%;
+    /* border:1px orange solid; */
+    background-color: white;
+    
+}
+.topInfoBanner {
+    display: inline-block;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+a:link {
+    color:black;
+}
+a:visited{
+    color:black;
+}
+
+
+.topImg {
+    width: 250px;
+    height:300px;
+    display: inline-block;
+
+}
+.topsProducts{
+    /* border:1px pink solid; */
+    width:100%;
+    margin-top: 15%;
+
+}
+.bottomInfo{
+    margin-top: 5%;
+    margin-left: 6%;
+}
+
+.bottomNav{
+    margin-top: 10%;
+    /* border:1px orange solid; */
+    width:80%;
+    padding: 2%;
+
+}

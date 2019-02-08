@@ -1,0 +1,113 @@
+@using Microsoft.Extensions.Options
+@inject IOptions<StripeSettings> Stripe
+@using Microsoft.AspNetCore.Http;
+@using Ecommerce.Models
+@model Item
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>specific PRODUCT </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="~/css/prodPage.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <a class="navbar-brand" href="/">
+                    <img src="~/images/icon.png" alt="ASP.NET" width="30" height="30"/>
+                </a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/women-maintops">Women <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/men">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Girls</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Community</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="prodDetails">
+
+            <div class="imgOfProd">
+                <img src="@Model.itemImage" alt="ASP.NET" class="img"/>
+            </div>
+
+            <div class="details">
+                <h1>@Model.itemName</h1>
+                <br>
+                <h4>@Model.itemPrice USD</h4>
+                <br>
+                <h5>Why we made this</h5>
+                <br>
+                <div class="description">
+                    <span class="descText">@Model.itemDesc</span>
+                </div>
+
+
+                <div class="formSize">
+                    <!-- <form> -->
+                    <form action = "/home/charge" method="POST">
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Size</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>2</option>
+                                    <option>4</option>
+                                    <option>6</option>
+                                    <option>8</option>
+                                    <option>10</option>
+                                    <option>12</option>
+                                </select>
+                                <br>
+                                <script src="//checkout.stripe.com/v2/checkout.js"
+                                    class="stripe-button"
+                                    data-key="@Stripe.Value.PublishableKey"
+                                    data-locale="auto"
+                                    data-description="Sample Charge"
+                                    data-amount= @Model.itemPrice>
+                                </script>
+
+                                <button type="button" class="btn btn-danger">Add To Bag</button>
+
+    
+                            </div>
+                        </div>
+                    </form>
+                    <!-- </form> -->
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="shippingInfo">
+            <div class="shippingText">
+                <h3>Free Shipping. Free Returns</h3>
+                <p>Less stress, more sweat.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

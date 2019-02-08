@@ -1,0 +1,73 @@
+.img{
+    width: 400px;
+    height: 450px;
+    
+}
+.imgOfProd {
+    /* border:1px orange solid; */
+    margin-top:3%;
+    display: inline-block;
+}
+.details {
+    /* border:1px pink solid; */
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3%;
+    margin-left: 4%;
+    width:55%;
+
+}
+h1 {
+    font-weight: normal;
+}
+h4 {
+    font-weight: lighter;
+}
+h5 {
+    font-weight:normal;
+}
+
+.description{
+    /* border:1px orange solid; */
+    width: 80%;
+    display: inline-block;
+    margin-bottom: 3%;
+    /* margin-left: 2%; */
+
+}
+.descText {
+    font-size: smaller;
+}
+
+.formSize{
+    /* border:1px green solid; */
+    margin-top: 3%;
+}
+
+.btn{
+    width: 100%;
+}
+
+.shippingInfo{
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png");
+    width: 80%;
+    height: 260px;
+    margin-left: 10%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15%;
+    /* border:1px green solid; */
+
+}
+.shippingText {
+    display: inline-block;
+    background: white;
+    width:600px;
+    height: 150px;
+    margin-top: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* border:1px red solid; */
+
+}

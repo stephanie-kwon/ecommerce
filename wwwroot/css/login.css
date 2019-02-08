@@ -1,0 +1,84 @@
+.sideNav {
+    height: 100%;
+    width: 300px;
+    margin-top: 3%;
+    display: inline-block;
+    top: 15%;
+    /* border:1px orange solid; */
+    background-color: white;
+    vertical-align: top;
+    
+}
+a:link {
+    color:black;
+}
+a:visited{
+    color:black;
+}
+
+.topImg {
+    width: 250px;
+    height:300px;
+    display: inline-block;
+
+}
+.topsProducts{
+    /* border:1px pink solid; */
+    width:70%;
+    margin-top: 3%;
+    display: inline-block;
+
+
+}
+
+.signup {
+    /* border: 1px pink solid; */
+    height: 300px;
+    width: 350px;
+    float: left;
+    display: inline-block;
+    margin-left: 15%;
+}
+
+.login {
+    /* border: 1px blue solid; */
+    height: 300px;
+    width: 350px;
+    float: left;
+    margin-left: 5%;
+}
+.banner{
+    border:1px orange solid;
+    text-align: center;
+}
+
+h2 {
+    font-weight: lighter;
+}
+h5 {
+    font-weight: lighter;
+}
+
+.astrid {
+    color: red;
+    font-size: small
+}
+.logE {
+    font-weight: lighter;
+    font-size: small
+}
+.button {
+    background-color: black;
+    width: 350px;
+    height: 50px;
+    color: white;
+
+}
+
+.button:hover {
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    color: black;
+    border-color: black;
+}
