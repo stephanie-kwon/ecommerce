@@ -46,10 +46,11 @@ a:visited{
     width: 350px;
     float: left;
     margin-left: 5%;
+
 }
 .banner{
-    border:1px orange solid;
     text-align: center;
+    margin-top: 1%;
 }
 
 h2 {
